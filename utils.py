@@ -1,4 +1,3 @@
-
 # Importando as bibliotecas
 import pandas as pd
 from sklearn.base import BaseEstimator, TransformerMixin
@@ -55,25 +54,3 @@ class MinMax(BaseEstimator, TransformerMixin):
         df = df.copy()
         df[self.min_max_scaler] = self.scaler.transform(df[self.min_max_scaler])
         return df
-
-# Classe de Oversample
-class Oversample(BaseEstimator, TransformerMixin):
-    def __init__(self, target='Obesity'):
-        self.target = target
-
-    def fit(self, df, y=None):
-        return self
-
-    def transform(self, df):
-        if self.target in df.columns:
-            oversample = SMOTE(sampling_strategy='not majority')
-            X = df.drop(columns=[self.target])
-            y = df[self.target]
-            X_bal, y_bal = oversample.fit_resample(X, y)
-            df_bal = pd.concat([pd.DataFrame(X_bal, columns=X.columns),
-                                pd.DataFrame(y_bal, columns=[self.target])],
-                               axis=1)
-            return df_bal
-        else:
-            print(f"A coluna target '{self.target}' não está no DataFrame")
-            return df
