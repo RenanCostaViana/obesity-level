@@ -21,13 +21,13 @@ st.write("### Gênero")
 input_genero = st.radio('Qual é o seu gênero biológico?', ['Masculino', 'Feminino'])
 
 st.write("### Idade")
-input_idade = int(st.number_input('Digite a idade do paciente', 35))
+input_idade = int(st.number_input('Digite a idade do paciente', 0))
 
 st.write("### Altura")
-input_altura= float(st.number_input('Digite a altura do paciente', 1.71))
+input_altura= float(st.number_input('Digite a altura do paciente', 0.01))
 
 st.write("### Peso")
-input_peso = float(st.number_input('Digite o peso do paciente', 75.5))
+input_peso = float(st.number_input('Digite o peso do paciente', 0.1))
 
 st.write("### Histórico Familiar")
 input_historico= st.radio('Há histórico de obesidade na família?', ['Sim', 'Não'])
