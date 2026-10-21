@@ -1,0 +1,17 @@
+# Ambientes virtuais (nunca subir: o requirements.txt basta)
+venv/
+.venv/
+env/
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Streamlit (segredos locais)
+.streamlit/secrets.toml
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
