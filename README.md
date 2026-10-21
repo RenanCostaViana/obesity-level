@@ -4,7 +4,7 @@ Sistema preditivo para apoiar a equipe médica de um hospital na avaliação do 
 
 Projeto desenvolvido individualmente como Tech Challenge da Fase 4 da Pós-Graduação em Data Analytics (FIAP).
 
-🔗 **App:** [ADICIONAR LINK DO STREAMLIT APÓS O DEPLOY]
+🔗 **App:** [[Obesity Level]](https://obesity-level-mpzjwzxz2futsi4liy9rnk.streamlit.app/)
 📊 **Painel:** veja as imagens em [`dashboard/`](dashboard/)
 
 ---
